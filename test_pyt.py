@@ -1,9 +1,18 @@
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
+import pytest
 
-def test_example():
-    # driver = webdriver.Firefox(executable_path="C:\Drivers\geckodriver.exe")
+@pytest.fixture(scope="module")
+def test_launch():
+    global driver
     driver = webdriver.Chrome(executable_path="C:\Drivers\chromedriver.exe")
-    driver.get("https://www.google.com/")
     print(driver.title)
+    yield
     driver.close()
+def test_launch1(test_launch):
+    driver.get("https://www.google.com/")
+    print("Page Title: "+driver.title)
+    assert driver.title=="google.com"
+def test_launch2(test_launch):
+    driver.get("https://www.google.com/")
+    print("current URl: "+ driver.current_url)
+    assert driver.current_url=="https://www.google.com/"
