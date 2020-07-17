@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$USER_HOME$/PycharmProjects/Firstproject/.idea/Firstproject.iml" filepath="$USER_HOME$/PycharmProjects/Firstproject/.idea/Firstproject.iml" />
+      <module fileurl="file://$USER_HOME$/PycharmProjects/TestAutomation/.idea/TestAutomation.iml" filepath="$USER_HOME$/PycharmProjects/TestAutomation/.idea/TestAutomation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/pytestproject.iml" filepath="$PROJECT_DIR$/.idea/pytestproject.iml" />
+    </modules>
+  </component>
+</project>
