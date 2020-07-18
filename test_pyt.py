@@ -4,7 +4,7 @@ import pytest
 @pytest.fixture(scope="module")
 def test_launch():
     global driver
-    driver = webdriver.Chrome(executable_path="C:\Drivers\chromedriver.exe")
+    driver = webdriver.Chrome(executable_path=".\Drivers\chromedriver.exe")
     print(driver.title)
     yield
     driver.close()
